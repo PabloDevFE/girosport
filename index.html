@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Giro Sport | Bikes premium para Triathlon</title>
+    <meta
+      name="description"
+      content="Vitrine virtual da Giro Sport para bicicletas novas e usadas de alta performance, com foco em triathlon, contra-relógio e ciclismo de estrada."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Giro Sport - in&iacute;cio">
+        <img class="brand-logo" src="./assets/logo.svg" alt="Giro Sport">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navega&ccedil;&atilde;o principal">
+        <a href="#bicicletas">Bicicletas</a>
+        <a href="#novas">Novas</a>
+        <a href="#usadas">Usadas</a>
+        <a href="#vender">Venda conosco</a>
+        <a href="#referencia">Giro Sport</a>
+      </nav>
+
+      <a class="header-cta" href="#vender">Avalie sua bike</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Destaques Giro Sport">
+        <div class="carousel" data-carousel>
+          <article class="hero-slide is-active" data-slide>
+            <img
+              class="hero-media"
+              src="./assets/hero-aero-tri.png"
+              alt="Bicicleta de triathlon preta em est&uacute;dio escuro com luz verde"
+            >
+            <div class="hero-scrim"></div>
+            <div class="hero-content">
+              <p class="eyebrow">Triathlon / TT / Road</p>
+              <h1>Bicicletas de alto rendimento para atletas que n&atilde;o treinam por acaso.</h1>
+              <p>
+                Uma curadoria de bikes novas e usadas para quem busca aerodin&acirc;mica,
+                precis&atilde;o e confian&ccedil;a no dia da prova.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#bicicletas">Ver bicicletas</a>
+                <a class="button button-ghost" href="#vender">Vender minha bike</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-slide" data-slide>
+            <img
+              class="hero-media"
+              src="./assets/hero-consign.png"
+              alt="Bicicleta de triathlon em suporte profissional dentro de oficina boutique"
+            >
+            <div class="hero-scrim"></div>
+            <div class="hero-content">
+              <p class="eyebrow">Consigna&ccedil;&atilde;o premium</p>
+              <h2>Quer vender sua bike? A Giro Sport conecta sua m&aacute;quina ao comprador certo.</h2>
+              <p>
+                Avalia&ccedil;&atilde;o, vitrine profissional e negocia&ccedil;&atilde;o com p&uacute;blico
+                que entende valor, upgrade e proced&ecirc;ncia.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#vender">Come&ccedil;ar avalia&ccedil;&atilde;o</a>
+                <a class="button button-ghost" href="#referencia">Conhecer a Giro</a>
+              </div>
+            </div>
+          </article>
+
+          <button class="carousel-arrow carousel-prev" type="button" aria-label="Slide anterior" data-prev>
+            &larr;
+          </button>
+          <button class="carousel-arrow carousel-next" type="button" aria-label="Pr&oacute;ximo slide" data-next>
+            &rarr;
+          </button>
+
+          <div class="carousel-dots" aria-label="Selecionar destaque">
+            <button class="is-active" type="button" aria-label="Ir para destaque 1" data-dot></button>
+            <button type="button" aria-label="Ir para destaque 2" data-dot></button>
+            <button type="button" aria-label="Ir para destaque 3" data-dot></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-rail" aria-label="Categorias Giro Sport">
+        <a href="#bicicletas">Triathlon</a>
+        <a href="#bicicletas">Contra-rel&oacute;gio</a>
+        <a href="#bicicletas">Speed</a>
+        <a href="#usadas">Seminovas</a>
+        <a href="#novas">Novas</a>
+        <a href="#vender">Venda assistida</a>
+      </section>
+
+      <section class="products" id="bicicletas">
+        <div class="section-heading">
+          <p class="eyebrow dark">Vitrine Giro Sport</p>
+          <h2>Modelos em destaque</h2>
+        </div>
+
+        <div class="bike-grid">
+          <article class="bike-card" id="novas">
+            <div class="bike-image">
+              <span class="badge">Nova</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Pro nova" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">Triathlon</p>
+              <h3>AeroVolt T1 Pro</h3>
+              <p class="bike-price">R$ 48.900</p>
+              <div class="bike-specs">
+                <span>Tam. M</span>
+                <span>Di2</span>
+                <span>Carbono</span>
+              </div>
+              <a href="./bike-aerovolt-t1-pro.html">Ver detalhes</a>
+            </div>
+          </article>
+
+          <article class="bike-card">
+            <div class="bike-image">
+              <span class="badge used">Seminova</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Race seminova" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">Triathlon</p>
+              <h3>AeroVolt T1 Race</h3>
+              <p class="bike-price">R$ 36.700</p>
+              <div class="bike-specs">
+                <span>Tam. P</span>
+                <span>Ultegra</span>
+                <span>2024</span>
+              </div>
+              <a href="#contato">Tenho interesse</a>
+            </div>
+          </article>
+
+          <article class="bike-card">
+            <div class="bike-image">
+              <span class="badge">Nova</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 SL nova" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">TT / Contra-rel&oacute;gio</p>
+              <h3>AeroVolt T1 SL</h3>
+              <p class="bike-price">R$ 41.300</p>
+              <div class="bike-specs">
+                <span>Tam. G</span>
+                <span>Carbon Disc</span>
+                <span>Aero bar</span>
+              </div>
+              <a href="#contato">Tenho interesse</a>
+            </div>
+          </article>
+
+          <article class="bike-card" id="usadas">
+            <div class="bike-image">
+              <span class="badge used">Usada premium</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Fit usada premium" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">Triathlon</p>
+              <h3>AeroVolt T1 Fit</h3>
+              <p class="bike-price">R$ 28.900</p>
+              <div class="bike-specs">
+                <span>Tam. PP</span>
+                <span>Revisada</span>
+                <span>2023</span>
+              </div>
+              <a href="#contato">Tenho interesse</a>
+            </div>
+          </article>
+
+          <article class="bike-card">
+            <div class="bike-image">
+              <span class="badge">Nova</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Iron nova" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">Long distance</p>
+              <h3>AeroVolt T1 Iron</h3>
+              <p class="bike-price">R$ 52.400</p>
+              <div class="bike-specs">
+                <span>Tam. M/L</span>
+                <span>Powermeter</span>
+                <span>Tubeless</span>
+              </div>
+              <a href="#contato">Tenho interesse</a>
+            </div>
+          </article>
+
+          <article class="bike-card">
+            <div class="bike-image">
+              <span class="badge used">Seminova</span>
+              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Aero seminova" loading="lazy">
+            </div>
+            <div class="bike-info">
+              <p class="bike-type">Speed aero</p>
+              <h3>AeroVolt T1 Aero</h3>
+              <p class="bike-price">R$ 33.500</p>
+              <div class="bike-specs">
+                <span>Tam. G</span>
+                <span>105 Di2</span>
+                <span>2025</span>
+              </div>
+              <a href="#contato">Tenho interesse</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="sell-section" id="vender">
+        <div class="sell-copy">
+          <p class="eyebrow dark">Venda assistida</p>
+          <h2>Quer vender a sua bicicleta conosco?</h2>
+          <p>
+            A Giro Sport prepara sua bike para uma vitrine de alto padr&atilde;o:
+            avalia&ccedil;&atilde;o t&eacute;cnica, fotografia, descri&ccedil;&atilde;o objetiva e contato
+            com compradores que j&aacute; procuram performance.
+          </p>
+          <a class="button button-dark" href="#contato">Preencher formulário</a>
+        </div>
+        <div class="sell-steps" aria-label="Como funciona">
+          <div>
+            <span>01</span>
+            <strong>Avalia&ccedil;&atilde;o</strong>
+            <p>Analisamos modelo, grupo, estado, tamanho e hist&oacute;rico.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <strong>Vitrine</strong>
+            <p>Montamos o an&uacute;ncio com fotos e informa&ccedil;&otilde;es claras.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <strong>Negocia&ccedil;&atilde;o</strong>
+            <p>Conectamos sua bike a atletas e entusiastas qualificados.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="authority" id="referencia">
+        <div>
+          <p class="eyebrow">Refer&ecirc;ncia no segmento</p>
+          <h2>Giro Sport &eacute; para quem entende que a bike certa muda a prova inteira.</h2>
+        </div>
+        <p>
+          Nossa curadoria prioriza proced&ecirc;ncia, configura&ccedil;&atilde;o e encaixe no perfil do
+          atleta. Da primeira conversa ao fechamento, o foco &eacute; ajudar cada ciclista
+          a comprar ou vender com mais clareza, seguran&ccedil;a e senso de performance.
+        </p>
+        <div class="authority-stats" aria-label="Diferenciais Giro Sport">
+          <div>
+            <strong>TT</strong>
+            <span>Foco em triathlon e contra-rel&oacute;gio</span>
+          </div>
+          <div>
+            <strong>360&deg;</strong>
+            <span>Curadoria, vitrine e suporte comercial</span>
+          </div>
+          <div>
+            <strong>Pro</strong>
+            <span>Comunica&ccedil;&atilde;o direta para p&uacute;blico exigente</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contato">
+      <div class="footer-brand">
+        <img src="./assets/logo.svg" alt="Giro Sport">
+        <p>Bicicletas premium novas e usadas para triathlon, speed e alta performance.</p>
+      </div>
+      <div>
+        <h3>Navegue</h3>
+        <a href="#bicicletas">Bicicletas</a>
+        <a href="#vender">Venda conosco</a>
+        <a href="#referencia">Sobre a Giro</a>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <a href="mailto:contato@girosport.com.br">contato@girosport.com.br</a>
+        <a href="tel:+5511999999999">(11) 99999-9999</a>
+        <span>Atendimento nacional</span>
+      </div>
+    </footer>
+
+    <div class="subfooter">
+      Desenvolvido por APES Digital
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
