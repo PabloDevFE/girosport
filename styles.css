@@ -1073,7 +1073,8 @@ select {
 
 @media (max-width: 1020px) {
   .site-header {
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
   }
 
   .main-nav {
@@ -1104,7 +1105,7 @@ select {
 
   .menu-toggle {
     display: block;
-    order: 3;
+    grid-column: 2;
     justify-self: end;
   }
 
@@ -1159,7 +1160,12 @@ select {
   }
 
   .site-header {
+    grid-template-columns: minmax(0, 1fr) auto;
     padding: 10px 16px;
+  }
+
+  .brand {
+    min-width: 0;
   }
 
   .brand-logo {
@@ -1215,10 +1221,66 @@ select {
     right: 16px;
   }
 
-  .category-rail,
-  .bike-grid,
   .authority-stats {
     grid-template-columns: 1fr;
+  }
+
+  .category-rail {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 12px 16px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    scroll-padding-left: 16px;
+    scroll-snap-type: x proximity;
+    scrollbar-width: none;
+  }
+
+  .category-rail::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-rail a {
+    flex: 0 0 auto;
+    min-height: 42px;
+    padding: 10px 15px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    font-size: 0.74rem;
+    line-height: 1;
+    scroll-snap-align: start;
+    white-space: nowrap;
+  }
+
+  .category-rail a:last-child {
+    border-right: 1px solid var(--line);
+  }
+
+  .products {
+    overflow: hidden;
+  }
+
+  .bike-grid {
+    display: flex;
+    gap: 14px;
+    max-width: none;
+    margin: 0 -18px;
+    overflow-x: auto;
+    padding: 0 18px 12px;
+    scroll-padding-left: 18px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .bike-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bike-card {
+    flex: 0 0 min(82vw, 340px);
+    scroll-snap-align: start;
   }
 
   .product-detail {
@@ -1248,12 +1310,6 @@ select {
 
   .product-quick-specs {
     grid-template-columns: 1fr;
-  }
-
-  .category-rail a {
-    min-height: 58px;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
   .sell-steps div {
