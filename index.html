@@ -8,7 +8,7 @@
       name="description"
       content="Vitrine virtual da Giro Sport para bicicletas novas e usadas de alta performance, com foco em triathlon, contra-relógio e ciclismo de estrada."
     >
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20260713-5">
   </head>
   <body>
     <header class="site-header" data-header>
@@ -73,7 +73,28 @@
                 que entende valor, upgrade e proced&ecirc;ncia.
               </p>
               <div class="hero-actions">
-                <a class="button button-primary" href="#vender">Come&ccedil;ar avalia&ccedil;&atilde;o</a>
+                <a class="button button-primary" href="#vender">Avaliar minha bike</a>
+                <a class="button button-ghost" href="#referencia">Conhecer a Giro</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-slide" data-slide>
+            <img
+              class="hero-media"
+              src="./assets/hero-road-campaign.png"
+              alt="Bicicleta de estrada preta em est&uacute;dio com detalhes verdes"
+            >
+            <div class="hero-scrim"></div>
+            <div class="hero-content">
+              <p class="eyebrow">Road / Speed / Performance</p>
+              <h2>Velocidade para quem quer transformar cada quil&ocirc;metro em evolu&ccedil;&atilde;o.</h2>
+              <p>
+                Bikes de estrada selecionadas por configura&ccedil;&atilde;o, proced&ecirc;ncia
+                e potencial de performance.
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#bicicletas">Ver bikes road</a>
                 <a class="button button-ghost" href="#referencia">Conhecer a Giro</a>
               </div>
             </div>
@@ -109,22 +130,22 @@
           <h2>Modelos em destaque</h2>
         </div>
 
-        <div class="bike-grid">
-          <article class="bike-card" id="novas">
-            <div class="bike-image">
-              <span class="badge">Nova</span>
-              <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Pro nova" loading="lazy">
+        <div class="bike-grid" data-bike-carousel>
+          <article class="bike-card" id="usadas">
+            <div class="bike-image is-contain">
+              <span class="badge used">Seminova</span>
+              <img src="./assets/cervelo-p-series-01.jpg" alt="Cerv&eacute;lo P-Series Rival AXS seminova" loading="lazy" decoding="async">
             </div>
             <div class="bike-info">
               <p class="bike-type">Triathlon</p>
-              <h3>AeroVolt T1 Pro</h3>
+              <h3>Cerv&eacute;lo P-Series</h3>
               <p class="bike-price">R$ 48.900</p>
               <div class="bike-specs">
                 <span>Tam. M</span>
-                <span>Di2</span>
+                <span>Rival AXS</span>
                 <span>Carbono</span>
               </div>
-              <a href="./bike-aerovolt-t1-pro.html">Ver detalhes</a>
+              <a href="./bike-cervelo-p-series.html">Ver detalhes</a>
             </div>
           </article>
 
@@ -146,7 +167,7 @@
             </div>
           </article>
 
-          <article class="bike-card">
+          <article class="bike-card" id="novas">
             <div class="bike-image">
               <span class="badge">Nova</span>
               <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 SL nova" loading="lazy">
@@ -164,7 +185,7 @@
             </div>
           </article>
 
-          <article class="bike-card" id="usadas">
+          <article class="bike-card">
             <div class="bike-image">
               <span class="badge used">Usada premium</span>
               <img src="./assets/bike-card-tri.png" alt="AeroVolt T1 Fit usada premium" loading="lazy">
@@ -218,87 +239,150 @@
             </div>
           </article>
         </div>
+
+        <div class="bike-carousel-controls" aria-label="Navega&ccedil;&atilde;o das bicicletas" data-bike-controls>
+          <button type="button" aria-label="Ver bicicleta anterior" data-bike-prev disabled>
+            &larr;
+          </button>
+          <div class="bike-carousel-status">
+            <div class="bike-carousel-dots" aria-label="Posi&ccedil;&atilde;o no carrossel">
+              <button class="is-active" type="button" aria-label="Ver bicicleta 1" data-bike-dot></button>
+              <button type="button" aria-label="Ver bicicleta 2" data-bike-dot></button>
+              <button type="button" aria-label="Ver bicicleta 3" data-bike-dot></button>
+              <button type="button" aria-label="Ver bicicleta 4" data-bike-dot></button>
+              <button type="button" aria-label="Ver bicicleta 5" data-bike-dot></button>
+              <button type="button" aria-label="Ver bicicleta 6" data-bike-dot></button>
+            </div>
+            <span aria-live="polite" data-bike-count>1 / 6</span>
+          </div>
+          <button type="button" aria-label="Ver pr&oacute;xima bicicleta" data-bike-next>
+            &rarr;
+          </button>
+        </div>
       </section>
 
       <section class="sell-section" id="vender">
+        <div class="sell-media">
+          <img
+            src="./assets/hero-consign.png"
+            alt="Bicicleta de triathlon em avalia&ccedil;&atilde;o dentro de oficina especializada"
+            loading="lazy"
+          >
+          <div class="sell-media-caption">
+            <span>Venda com curadoria</span>
+            <strong>Da avalia&ccedil;&atilde;o ao comprador.</strong>
+          </div>
+        </div>
         <div class="sell-copy">
           <p class="eyebrow dark">Venda assistida</p>
-          <h2>Quer vender a sua bicicleta conosco?</h2>
+          <h2>Sua bike merece mais do que um an&uacute;ncio.</h2>
           <p>
-            A Giro Sport prepara sua bike para uma vitrine de alto padr&atilde;o:
-            avalia&ccedil;&atilde;o t&eacute;cnica, fotografia, descri&ccedil;&atilde;o objetiva e contato
-            com compradores que j&aacute; procuram performance.
+            A Giro Sport cuida da apresenta&ccedil;&atilde;o, organiza as informa&ccedil;&otilde;es e filtra
+            os contatos para conectar sua bicicleta a quem realmente entende o seu valor.
           </p>
-          <a class="button button-dark" href="#contato">Preencher formulário</a>
-        </div>
-        <div class="sell-steps" aria-label="Como funciona">
-          <div>
-            <span>01</span>
-            <strong>Avalia&ccedil;&atilde;o</strong>
-            <p>Analisamos modelo, grupo, estado, tamanho e hist&oacute;rico.</p>
+          <div class="sell-steps" aria-label="Como funciona">
+            <div>
+              <span>01</span>
+              <strong>Avalia&ccedil;&atilde;o t&eacute;cnica</strong>
+              <p>Entendemos modelo, configura&ccedil;&atilde;o, tamanho, estado e hist&oacute;rico.</p>
+            </div>
+            <div>
+              <span>02</span>
+              <strong>Vitrine profissional</strong>
+              <p>Preparamos fotos e uma descri&ccedil;&atilde;o clara, completa e objetiva.</p>
+            </div>
+            <div>
+              <span>03</span>
+              <strong>Conex&atilde;o qualificada</strong>
+              <p>Filtramos os contatos e conduzimos a aproxima&ccedil;&atilde;o com o comprador.</p>
+            </div>
           </div>
-          <div>
-            <span>02</span>
-            <strong>Vitrine</strong>
-            <p>Montamos o an&uacute;ncio com fotos e informa&ccedil;&otilde;es claras.</p>
-          </div>
-          <div>
-            <span>03</span>
-            <strong>Negocia&ccedil;&atilde;o</strong>
-            <p>Conectamos sua bike a atletas e entusiastas qualificados.</p>
+          <div class="sell-actions">
+            <a
+              class="button button-dark"
+              href="https://wa.me/5531982340580?text=Ol%C3%A1%2C%20gostaria%20de%20vender%20minha%20bicicleta%20com%20a%20Giro%20Sport.%20Pode%20me%20explicar%20como%20funciona%20a%20avalia%C3%A7%C3%A3o%3F"
+              target="_blank"
+              rel="noopener"
+            >
+              Quero vender minha bike
+            </a>
+            <span>Atendimento inicial pelo WhatsApp</span>
           </div>
         </div>
       </section>
 
       <section class="authority" id="referencia">
-        <div>
-          <p class="eyebrow">Refer&ecirc;ncia no segmento</p>
-          <h2>Giro Sport &eacute; para quem entende que a bike certa muda a prova inteira.</h2>
+        <div class="authority-heading">
+          <p class="eyebrow">Especialistas em performance</p>
+          <h2>Escolher bem come&ccedil;a por entender cada detalhe da bike.</h2>
         </div>
-        <p>
-          Nossa curadoria prioriza proced&ecirc;ncia, configura&ccedil;&atilde;o e encaixe no perfil do
-          atleta. Da primeira conversa ao fechamento, o foco &eacute; ajudar cada ciclista
-          a comprar ou vender com mais clareza, seguran&ccedil;a e senso de performance.
-        </p>
-        <div class="authority-stats" aria-label="Diferenciais Giro Sport">
-          <div>
-            <strong>TT</strong>
-            <span>Foco em triathlon e contra-rel&oacute;gio</span>
-          </div>
-          <div>
-            <strong>360&deg;</strong>
-            <span>Curadoria, vitrine e suporte comercial</span>
-          </div>
-          <div>
-            <strong>Pro</strong>
-            <span>Comunica&ccedil;&atilde;o direta para p&uacute;blico exigente</span>
-          </div>
+        <div class="authority-copy">
+          <p>
+            Na Giro Sport, cada modelo &eacute; analisado pelo que realmente entrega:
+            proced&ecirc;ncia, estado, configura&ccedil;&atilde;o e adequa&ccedil;&atilde;o ao perfil do atleta.
+            O atendimento &eacute; direto, t&eacute;cnico e sem press&atilde;o.
+          </p>
+          <a href="#bicicletas">Conhecer as bicicletas <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="authority-pillars" aria-label="Diferenciais Giro Sport">
+          <article>
+            <p class="authority-label"><span>01</span> Leitura t&eacute;cnica</p>
+            <h3>Mais do que marca e ano.</h3>
+            <p>Analisamos quadro, grupo, rodas, tamanho, hist&oacute;rico e condi&ccedil;&atilde;o.</p>
+          </article>
+          <article>
+            <p class="authority-label"><span>02</span> Curadoria respons&aacute;vel</p>
+            <h3>S&oacute; entra o que faz sentido.</h3>
+            <p>A vitrine prioriza bikes coerentes com o valor, uso e n&iacute;vel de performance.</p>
+          </article>
+          <article>
+            <p class="authority-label"><span>03</span> Negocia&ccedil;&atilde;o assistida</p>
+            <h3>Clareza at&eacute; o fechamento.</h3>
+            <p>Aproximamos comprador e vendedor com contexto, transpar&ecirc;ncia e suporte.</p>
+          </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer" id="contato">
-      <div class="footer-brand">
-        <img src="./assets/logo.svg" alt="Giro Sport">
-        <p>Bicicletas premium novas e usadas para triathlon, speed e alta performance.</p>
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="./assets/logo.svg" alt="Giro Sport">
+          <p>Curadoria de bicicletas novas e usadas para triathlon, road e alta performance.</p>
+          <a
+            class="footer-whatsapp"
+            href="https://wa.me/5531982340580?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Giro%20Sport."
+            target="_blank"
+            rel="noopener"
+          >
+            Falar com a Giro <span aria-hidden="true">&rarr;</span>
+          </a>
+        </div>
+        <nav class="footer-links" aria-label="Navega&ccedil;&atilde;o do rodap&eacute;">
+          <div>
+            <h3>Vitrine</h3>
+            <a href="#bicicletas">Bicicletas</a>
+            <a href="#novas">Novas</a>
+            <a href="#usadas">Seminovas</a>
+          </div>
+          <div>
+            <h3>Giro Sport</h3>
+            <a href="#vender">Venda conosco</a>
+            <a href="#referencia">Nossa curadoria</a>
+          </div>
+          <div>
+            <h3>Atendimento</h3>
+            <a href="tel:+5531982340580">(31) 98234-0580</a>
+            <a href="mailto:contato@girosport.com.br">contato@girosport.com.br</a>
+            <span>Atendimento nacional</span>
+          </div>
+        </nav>
       </div>
-      <div>
-        <h3>Navegue</h3>
-        <a href="#bicicletas">Bicicletas</a>
-        <a href="#vender">Venda conosco</a>
-        <a href="#referencia">Sobre a Giro</a>
-      </div>
-      <div>
-        <h3>Contato</h3>
-        <a href="mailto:contato@girosport.com.br">contato@girosport.com.br</a>
-        <a href="tel:+5511999999999">(11) 99999-9999</a>
-        <span>Atendimento nacional</span>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Giro Sport</span>
+        <span>Desenvolvido por APES Digital</span>
       </div>
     </footer>
-
-    <div class="subfooter">
-      Desenvolvido por APES Digital
-    </div>
 
     <script src="./script.js"></script>
   </body>
