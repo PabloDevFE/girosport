@@ -81,13 +81,21 @@ function initProductGallery() {
     const activeThumb = thumbs[activeGalleryImage];
     const src = activeThumb.dataset.src;
     const alt = activeThumb.dataset.alt;
+    const label = activeThumb.dataset.galleryLabel || `Foto ${activeGalleryImage + 1} da bicicleta`;
 
-    if (src) {
+    if (mainImage.tagName === "IMG" && src) {
       mainImage.src = src;
     }
 
-    if (alt) {
+    if (mainImage.tagName === "IMG" && alt) {
       mainImage.alt = alt;
+    } else {
+      mainImage.setAttribute("aria-label", `${label} pendente`);
+      const placeholderTitle = mainImage.querySelector("[data-gallery-placeholder-title]");
+
+      if (placeholderTitle) {
+        placeholderTitle.textContent = label;
+      }
     }
 
     thumbs.forEach((thumb, thumbIndex) => {
